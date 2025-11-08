@@ -1,0 +1,21 @@
+name: Build
+on: [push, pull_request]
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y meson ninja-build libudev-dev
+
+    - name: Configure
+      run: meson setup build
+
+    - name: Build
+      run: meson compile -C build
