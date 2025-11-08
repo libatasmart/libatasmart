@@ -7,4 +7,7 @@ project('libatasmart', 'c',
 )
 
 subdir('tools')
-subdir('src')
+
+if get_option('enable_src_build')
+  subdir('src')
+endif
