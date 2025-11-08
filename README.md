@@ -1,5 +1,8 @@
 # ATA S.M.A.R.T. reading and parsing library
 
+[![Build](https://github.com/libatasmart/libatasmart/actions/workflows/build.yml/badge.svg)](https://github.com/alibatasmart/libatasmart/actions/workflows/build.yml)
+[![CodeQL](https://github.com/libatasmart/libatasmart/actions/workflows/codeql.yml/badge.svg)](https://github.com/libatasmart/libatasmart/actions/workflows/codeql.yml)
+
 As the name suggests libatasmart only does ATA S.M.A.R.T., there is no support for SCSI harddisks.
 SCSI S.M.A.R.T. is a very different system, support for it should be implemented in a separate library "libscsismart" if there should ever be demand for it.
 
