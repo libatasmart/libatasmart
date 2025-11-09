@@ -6,7 +6,7 @@ pkg_mod = import('pkgconfig')
 dep_udev = dependency('libudev', version : '>=143')
 
 # Library definition
-if get_option('enable-string-pooling')
+if get_option('enable_string_pooling')
     src_atasmart = custom_target('atasmart_strpool',
                                input: 'atasmart.c',
                                output: 'atasmart_strpool.c',
