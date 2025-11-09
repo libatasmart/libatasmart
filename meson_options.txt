@@ -1,16 +1,16 @@
-option('enable_src_build',
+option('src_build',
   type : 'boolean',
   value : true,
   description : 'Enables building of source.'
 )
 
-option('enable_string_pooling',
+option('string_pooling',
   type : 'boolean',
   value : true,
   description : 'Enables string pooling.'
 )
 
-option('enable_strpool_build',
+option('strpool_build',
   type : 'boolean',
   value : true,
   description : 'Enables building of host build tools.'

@@ -8,6 +8,6 @@ project('libatasmart', 'c',
 
 subdir('tools')
 
-if get_option('enable_src_build')
+if get_option('src_build')
   subdir('src')
 endif

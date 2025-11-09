@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 # Author: Antonio Vázquez Blanco <antoniovazquezblanco@gmail.com>
 
-if get_option('enable_string_pooling')
-  if get_option('enable_strpool_build')
+if get_option('string_pooling')
+  if get_option('strpool_build')
     tool_strpool = executable('strpool',
                               sources: 'strpool.c')
   else
